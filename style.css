@@ -266,6 +266,7 @@ section {
 .footer {
     position: relative;
     background-color: #23232c;
+    padding: 2vh 0 2vh 0;
 }
 .footer-logo{
     position: relative;
@@ -589,6 +590,17 @@ section {
     width: 60%;
     color: #70757a;
 }
+.contact-title {
+    position: relative;
+    width: 50%;
+}
+.contact-body {
+    position: relative;
+    margin-bottom: 10%;
+}
+.text-body-container2 a {
+    color: #23232c;
+}
 .grid-container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -755,7 +767,7 @@ section {
       }
     .nav-contact {
         position: absolute;
-        bottom: 6vh;
+        bottom: 14vh;
         left: 2%;
         display: block
     }
@@ -858,8 +870,12 @@ section {
         position: relative;
         display: flex;
     }
+    .footer-menu-column {
+        margin-right: 5vh;
+    }
     .social-icon-container {
         display: flex;
+        justify-content: flex-start;
     }
     .social-icon {
         margin-right: 1vh;
@@ -1018,5 +1034,9 @@ section {
     }
     .industries-img {
         min-height: 60vh;
+    }
+    .contact-title {
+        width: 100%;
+        margin-bottom: 10%;
     }
 }
