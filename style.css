@@ -685,8 +685,11 @@ section {
     position: relative;
     color: #2B2B2B;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
+  }
+  .logo object {
+    filter: hue-rotate(0);
   }
   .topnav ul {
     display: flex;
@@ -767,7 +770,7 @@ section {
       }
     .nav-contact {
         position: absolute;
-        bottom: 14vh;
+        bottom: 18vh;
         left: 2%;
         display: block
     }
@@ -835,8 +838,14 @@ section {
     .container {
         margin: 2% 2% 2% 2%;
     }
+    .title {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .title2 h3 {
+        color: #ffffff;
+    }
     .about-logo {
-        margin-top: 20%;
         margin-bottom: 20%;
     }
     .about-container {
@@ -844,7 +853,7 @@ section {
         margin: 2% 2% 2% 2%;
     }
     .about-body {
-        width: 65%;
+        width: 100%;
     }
     .container-img {
         margin: 0 2% 4% 2%;
@@ -913,6 +922,12 @@ section {
     .slide-body {
         padding: 2vh;
     }
+    .personal-button {
+        height: 48px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+      }
     .technology-img {
         background-position: center;
     }
@@ -992,9 +1007,13 @@ section {
         font-size: 10px;
     }
     .section-button {
-        min-height: 42px;
-        padding-left: 38px;
-        padding-right: 38px;
+        min-height: 38px;
+        padding-left: 32px;
+        padding-right: 32px;
+        font-size: 16px;
+    }
+    .paragraph {
+        width: 80%;
     }
     .img-industries1 {
         background-position: center;
