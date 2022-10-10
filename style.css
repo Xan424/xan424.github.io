@@ -250,7 +250,7 @@ section {
 }
 .personal-button:hover,
 .personal-button:focus { 
-  background-color: #f2f4f7;
+  background-color: #c9c9c9;
   color: #ffffff;
   transition: 1s;
 }
@@ -274,6 +274,12 @@ section {
     margin: 0% 10% 0% 10%;
     font-size: 20px;
     color: #ffffff;
+}
+.footer-logo .logo {
+    color: #ffffff;
+}
+.footer-logo .dot {
+    background-color: #ffffff;
 }
 .footer-section {
     position: relative;
@@ -493,6 +499,9 @@ section {
     color: #ffffff;
     font-weight: 400;
 }
+.title2 h3 {
+    color: #ffffff;
+}
 .subtitle {
     position: relative;
     display: inline-flex;
@@ -683,11 +692,22 @@ section {
   /* Style the links inside the navigation bar */
   .logo {
     position: relative;
+    display: flex;
     color: #2B2B2B;
     text-decoration: none;
     font-size: 24px;
     font-weight: 500;
+    align-items: center;
   }
+  .dot {
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #e39b2e;
+        margin-right: 1vh;
+   }
   .logo object {
     filter: hue-rotate(0);
   }
@@ -709,11 +729,11 @@ section {
   }
   /* Change the color of links on hover */
   .topnav a:hover {
-    color: #c9c9c9;
+    opacity: 0.6;
   }
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    color: #c9c9c9;
+    opacity: 0.6;
   }
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
@@ -786,6 +806,9 @@ section {
         background-color: #ffffff;
         display: block;
       }
+    .topnav.responsive .dot {
+        background-color: #ffffff;
+    }
   }
   .fa-fa-bar {
     display: inline-block;
@@ -842,9 +865,6 @@ section {
         margin-top: 10%;
         margin-bottom: 10%;
     }
-    .title2 h3 {
-        color: #ffffff;
-    }
     .about-logo {
         margin-bottom: 20%;
     }
@@ -874,6 +894,14 @@ section {
         display: block;
         margin: 0 2% 0% 2%;
         justify-content: space-between;
+    }
+    .footer-logo .logo {
+        font-size: 18px;
+    }
+    .footer-logo .dot {
+        height: 16px;
+        width: 16px;
+        margin-right: 1%;
     }
     .footer-menu {
         position: relative;
