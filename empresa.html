@@ -72,86 +72,16 @@
         </div>
     </header>
     <section class="hidden">
-        <div class="home-container">
-            <div class="home-container-body">
-                <div><h4 style="font-weight: 200;">Multiaxis Consulting</h4></div>
-                <div style="margin-bottom: 10px;"><h1>Eficiencia y precisión en cada proceso de fabricación.</h1></div>
-                <div class="home-container-body-text" ><p>Líderes en soluciones avanzadas de CAD/CAM. Con más de 15 años de experiencia, ofrecemos postprocesadores personalizados, simulaciones precisas y soporte técnico para optimizar la eficiencia y precisión de tus procesos de producción.</p></div>
-                <div class="home-container-button-container">
-                    <a href="empresa.html"><div class="home-container-button">Sobre Nosotros</div></a>
-                    <a href="servicios.html"><div class="home-container-button">Servicios</div></a>
-                    <a href="#"><div class="home-container-scroll-button">></div></a>
-                </div>
+        <div class="page-title-container">
+            <div class="page-title"><h2>Comprometidos con la Innovación <br>y la Excelencia en cada proyecto.</h2></div>
+        </div>
+    </section>
+    <section class="hidden">
+        <div class="container-big-empresa">
+            <div class="container-big-body">
+                <div class="container-big-title" style="color: #ffffff;"><p>Empresa<br></p></div>
+                <div class="container-big-subtitle" style="color: #ffffff;"><h2>Nos especializamos en el desarrollo de postprocesadores personalizados para máquinas CNC, específicamente para los entornos NX Siemens y CATIA.</h2></div>
             </div>
-            <div class="code-container" id="codeContainer">
-                <!-- Las líneas de código se agregarán aquí -->
-            </div>
-        
-            <script>
-                const lines = [
-                    "%",
-                    "G00 G40 G49",
-                    "G0 G53 Z0.0",
-                    "G0 G53 A0.0 C0.0",
-                    "N1 (OPERATION:WEB_MILLING)",
-                    "M9",
-                    "T1 M6",
-                    "T2",
-                    "S10000 M03",
-                    "G0 G53 X-650 Y-750",
-                    "G0 G53 Z0.0",
-                    "G90 G00 G94",
-                    "M11",
-                    "M39",
-                    "G00 A-60.000 C180.000",
-                    "G53.1",
-                    "M10",
-                    "M38",
-                    "G05.1 Q1 R2",
-                    "X50.271 Y24.434",
-                    "G43 H01 Z20.321",
-                    "Z10.321",
-                    "G01 Z7.321 F3000",
-                    "G00 Z20.321",
-                    "G64",
-                    "G0 G53 Z0",
-                    "M1",
-                    "G0 G53 Z0",
-                    "G53 X-650 Y0",
-                    "G0 A0. C0.",
-                    "M99",
-                ];
-        
-                const container = document.getElementById('codeContainer');
-        
-                function addLine(line, delay) {
-                    setTimeout(() => {
-                        const lineElement = document.createElement('div');
-                        lineElement.classList.add('line');
-                        lineElement.textContent = line;
-                        container.appendChild(lineElement);
-        
-                        // Forzamos reflujo para que la animación funcione correctamente
-                        lineElement.offsetHeight; 
-        
-                        lineElement.style.opacity = 1;
-                    }, delay);
-                }
-        
-                function displayLines(lines, callback) {
-                    lines.forEach((line, index) => {
-                        addLine(line, index * 1000);
-                    });
-                    setTimeout(callback, lines.length * 1000); // Llama al callback después de que todas las líneas se hayan mostrado
-                }
-        
-                function repeat() {
-                    container.innerHTML = ''; // Limpia el contenedor
-                    displayLines(lines, repeat); // Vuelve a llamar a displayLines después de que termine
-                }
-        
-                repeat(); // Inicia el ciclo de repetición
-            </script>
         </div>
     </section>
     <section class="hidden">
@@ -164,53 +94,48 @@
         </div>
     </section>
     <section class="hidden">
-        <div class="container-big">
-            <div class="container-big-body">
-                <div class="container-big-title"><p>Desarrollo<br> de Postprocesadores.</p></div>
-                <div class="container-big-subtitle"><h2>Nos especializamos en el desarrollo de postprocesadores personalizados para máquinas CNC, específicamente para los entornos NX Siemens y CATIA.</h2></div>
+        <div class="container-big-empresa-two">
+            <div class="container-big-body"></div>
+        </div>
+    </section>
+    <section class="hidden">
+        <div class="section-header">
+            <div class="section-header-title"><h3>Sobre Nosotros</h3></div>
+            <div class="section-header-body">
+                <div class="section-header-body-text"><p>En Multiaxis Consulting, ofrecemos soluciones integrales en CAD/CAM, que incluyen postprocesadores personalizados para NX Siemens y CATIA, simulaciones avanzadas, documentación técnica, soporte técnico especializado y programas de formación, todo diseñado para maximizar la eficiencia y precisión de tu producción.</p></div>
             </div>
         </div>
     </section>
     <section class="hidden">
         <div class="services-grid">
             <div class="service-grid-column-one">
-                <div class="service-grid-column-icon"><div class="service-icon"><img src="assets/img/service_vector_3.svg" alt="" width="80" height="80"></div></div>
-                <div><p><strong>Simulación.</strong></p>
-                    <p>Ofrecemos soluciones avanzadas de simulación que permiten a nuestros clientes visualizar y optimizar sus procesos de mecanizado antes de la producción real.</p>
+                <div><p><strong>Innovación.</strong></p>
+                    <p>Nos mantenemos a la vanguardia de la tecnología, desarrollando soluciones que no solo cumplen, sino que superan las expectativas de nuestros clientes.</p>
                 </div>
             </div>
             <div class="service-grid-column-two">
-                <div class="service-grid-column-icon"><div class="service-icon"><img src="assets/img/service_vector_1.svg" alt="" width="80" height="80"></div></div>
-                <div><p><strong>Aplicaciones Especializadas.</strong></p>
-                    <p>Además de los postprocesadores, desarrollamos aplicaciones y macros personalizadas que automatizan procesos críticos de modelado, programación y generación de documentación.</p>
+                <div><p><strong>Calidad.</strong></p>
+                    <p>La precisión y la fiabilidad son fundamentales en todo lo que hacemos. Nos aseguramos de que cada solución que ofrecemos esté diseñada para ofrecer los más altos estándares de calidad.</p>
                 </div>
             </div>
             <div class="service-grid-column-three">
-                <div class="service-grid-column-icon"><div class="service-icon"><img src="assets/img/service_vector_2.svg" alt="" width="80" height="80"></div></div>
-                <div><p><strong>Documentación Técnica.</strong></p>
-                    <p>Nuestra capacidad para generar documentación técnica detallada es fundamental para mantener un flujo de trabajo organizado y eficiente.</p>
+                <div><p><strong>Compromiso con el Cliente.</strong></p>
+                    <p>Nuestros clientes son el centro de todo lo que hacemos, trabajando estrechamente con ellos para ofrecer soluciones personalizadas que impulsen su éxito.</p>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="hidden">
-        <div class="section-header">
-            <div class="section-header-title"><h3>Servicios</h3></div>
-            <div class="section-header-body">
-                <div class="section-header-body-text"><p>En Multiaxis Consulting, ofrecemos soluciones integrales en CAD/CAM, que incluyen postprocesadores personalizados para NX Siemens y CATIA, simulaciones avanzadas, documentación técnica, soporte técnico especializado y programas de formación, todo diseñado para maximizar la eficiencia y precisión de tu producción.</p></div>
-                <a href="servicios.html"><div class="section-header-body-button"><div class="button">Ver todo</div></a>
+        <div class="services-grid">
+            <div class="service-grid-column-one">
+                <div><p><strong>Formación Continua.</strong></p>
+                    <p>Ofrecemos formación y soporte para que nuestros clientes puedan maximizar el uso de las herramientas que desarrollamos.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="hidden">
-        <div class="product-grid">
-            <div class="product-grid-column-one">
-                <div class="product-grid-title"><h2>Soporte Técnico Especializado</h2></div>
-                <div class="product-grid-subtitle"><h4>Entendemos que el soporte técnico es crucial para el éxito de cualquier implementación tecnológica. Nuestro Panel de Soporte Técnico, permite una comunicación rápida y eficiente con nuestros clientes. Respondemos de manera oportuna a cualquier consulta o problema que pueda surgir, asegurando que su producción no se detenga.</h4></div>
+            <div class="service-grid-column-two">
+                <div><p><strong>Integridad.</strong></p>
+                    <p>Actuamos con transparencia y honestidad en todas nuestras relaciones, construyendo confianza a largo plazo con nuestros clientes y socios.</p>
+                </div>
             </div>
-            <div class="product-grid-column-two">
-                <div class="product-grid-title"><h2>Formación y Capacitación</h2></div>
-                <div class="product-grid-subtitle"><h4>Ofrecemos programas de formación y capacitación para asegurarnos de que nuestros clientes saquen el máximo provecho de nuestras soluciones. Nuestros cursos están diseñados para todos los niveles de experiencia y cubren todos los aspectos de NX CAM y la implementación de postprocesadores, desde conceptos básicos hasta técnicas avanzadas.</h4></div>
+            <div class="service-grid-column-threee">
             </div>
         </div>
     </section>
@@ -282,4 +207,3 @@
         </div>
     </footer>
 </body>
-</html>

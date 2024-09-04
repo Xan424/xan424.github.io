@@ -267,7 +267,7 @@ nav {
 .home-container {
     position: relative;
     display: flex;
-    height: 90vh;
+    height: 99vh;
     background-color: #354552;
     color: rgba(94,206,184,1);
     border-radius:  0px 0px 16px 16px;
@@ -426,13 +426,58 @@ nav {
     border-radius: 16px;
     margin: 2em;
 }
+.container-big-empresa {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 80vh;
+    background-image: url('assets/img/company_one.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    margin: 2em;
+}
+.container-big-empresa-two {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 80vh;
+    background-image: url('assets/img/Group\ 41.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    margin: 2em;
+}
 .container-big-body {
     padding: 2em;
     color: #354552;
 }
+.container-big-services {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    background-image: url('assets/img/Group\ 43.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    margin: 2em;
+}
+.container-big-body-services {
+    padding: 2em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+.container-big-subtitle-services {
+    width: 100%;
+}
 .container-big-title {
     position: absolute;
-    top: 1em;
+    top: 2em;
 }
 .container-big-body p {
     font-weight: 500;
@@ -463,6 +508,59 @@ nav {
         grid-area: 1 / 2 / 2 / 3;
         background-color: #354552;
         color: rgba(94,206,184,1);
+        border-radius: 16px;
+        padding: 2em;
+        height: 80vh;
+        display: grid;
+    }
+    .product-grid-column-one-img {
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: #D8F06F;
+        color: rgba(94,206,184,1);
+        border-radius: 16px;
+        padding: 2em;
+        height: 80vh;
+        display: grid;
+    }
+    .product-grid-column-one-img-two {
+        grid-area: 1 / 1 / 2 / 2;
+        background-image: url("assets/img/service-img.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+        padding: 2em;
+        height: 80vh;
+        display: grid;
+    }
+    .product-grid-column-two-img {
+        grid-area: 1 / 2 / 2 / 3;
+        background-image: url("assets/img/company_one.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+        padding: 2em;
+        height: 80vh;
+        display: grid;
+    }
+    .product-grid-column-two-img-two {
+        grid-area: 1 / 2 / 2 / 3;
+        background-image: url("assets/img/service-img-three.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+        padding: 2em;
+        height: 80vh;
+        display: grid;
+    }
+    .product-grid-column-two-img-three {
+        grid-area: 1 / 2 / 2 / 3;
+        background-image: url("assets/img/service-img-two.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         border-radius: 16px;
         padding: 2em;
         height: 80vh;
@@ -652,6 +750,19 @@ nav {
     background-color: #354552;
     color: #D8F06F;
 }
+.page-title-container {
+    position: relative;
+    display: block;
+    margin: 6em 2em 6em 2em;
+}
+.page-title {
+    position: relative;
+    margin-top: 4em;
+}
+.page-subtitle {
+    margin-top: 1em;
+}
+
 
 /** SWIPER */
 
@@ -930,6 +1041,31 @@ footer {
         margin-bottom: 1em;
     }
     .product-grid-column-two { 
+        padding: 1em;
+        height: 60vh;
+        margin-bottom: 1em;
+    }
+    .product-grid-column-one-img {
+        padding: 1em;
+        height: 60vh;
+        margin-bottom: 1em;
+    }
+    .product-grid-column-one-img-two {
+        padding: 1em;
+        height: 60vh;
+        margin-bottom: 1em;
+    }
+    .product-grid-column-two-img {
+        padding: 1em;
+        height: 60vh;
+        margin-bottom: 1em;
+    }
+    .product-grid-column-two-img-two {
+        padding: 1em;
+        height: 60vh;
+        margin-bottom: 1em;
+    }
+    .product-grid-column-two-img-three {
         padding: 1em;
         height: 60vh;
         margin-bottom: 1em;
