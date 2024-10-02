@@ -18,7 +18,7 @@
     <header>
         <div class="header-column-one">
             <div class="header_logo">
-                <a id="nav-element" href="index.html"><div class="logo-img"><img src="assets/img/logo_header.svg" alt="logo" width="85%" height="85%"></div></a>
+                <a id="nav-element" href="index.html"><div class="logo-img"><img src="assets/img/Imagotipo_Dtools_Negativo_Sinfondo.svg" alt="logo" width="100px"></div></a>
             </div>
         </div>
         <div class="header-column-two">
@@ -40,7 +40,7 @@
                 </nav>  
         </div>
         <div class="header-column-three">
-            <div class="button-header"><a href="">Contacto</a></li></div>
+            <div><a href="">Contacto</a></li></div>
         </div>
         <div id="overlaymenu">
             <div class="overlymenu_line"></div>
@@ -74,190 +74,180 @@
     <section class="hidden">
         <div class="home-container">
             <div class="home-container-body">
-                <div><h4 style="font-weight: 200;">Multiaxis Consulting</h4></div>
-                <div style="margin-bottom: 10px;"><h1>Eficiencia y precisión en cada proceso de fabricación.</h1></div>
-                <div class="home-container-body-text" ><p>Líderes en soluciones avanzadas de CAD/CAM. Con más de 15 años de experiencia, ofrecemos postprocesadores personalizados, simulaciones precisas y soporte técnico para optimizar la eficiencia y precisión de tus procesos de producción.</p></div>
+                <div><h4 style="font-weight: 200;">Más que Herramientas.</h4></div>
+                <div style="margin-bottom: 10px;"><h1>Soluciones integrales de herramientas de corte.</h1></div>
+                <div class="home-container-body-text" ><h3>Especialistas en la producción de herramientas de precisión <br> y servicios para el mecanizado.</h3></div>
                 <div class="home-container-button-container">
-                    <a href="empresa.html"><div class="home-container-button">Sobre Nosotros</div></a>
-                    <a href="servicios.html"><div class="home-container-button">Servicios</div></a>
-                    <a href="#"><div class="home-container-scroll-button">></div></a>
+                    <a href="empresa.html"><div class="home-container-button">Ver más</div></a>
                 </div>
-            </div>
-            <div class="code-container" id="codeContainer">
-                <!-- Las líneas de código se agregarán aquí -->
-            </div>
-        
-            <script>
-                const lines = [
-                    "%",
-                    "G00 G40 G49",
-                    "G0 G53 Z0.0",
-                    "G0 G53 A0.0 C0.0",
-                    "N1 (OPERATION:WEB_MILLING)",
-                    "M9",
-                    "T1 M6",
-                    "T2",
-                    "S10000 M03",
-                    "G0 G53 X-650 Y-750",
-                    "G0 G53 Z0.0",
-                    "G90 G00 G94",
-                    "M11",
-                    "M39",
-                    "G00 A-60.000 C180.000",
-                    "G53.1",
-                    "M10",
-                    "M38",
-                    "G05.1 Q1 R2",
-                    "X50.271 Y24.434",
-                    "G43 H01 Z20.321",
-                    "Z10.321",
-                    "G01 Z7.321 F3000",
-                    "G00 Z20.321",
-                    "G64",
-                    "G0 G53 Z0",
-                    "M1",
-                    "G0 G53 Z0",
-                    "G53 X-650 Y0",
-                    "G0 A0. C0.",
-                    "M99",
-                ];
-        
-                const container = document.getElementById('codeContainer');
-        
-                function addLine(line, delay) {
-                    setTimeout(() => {
-                        const lineElement = document.createElement('div');
-                        lineElement.classList.add('line');
-                        lineElement.textContent = line;
-                        container.appendChild(lineElement);
-        
-                        // Forzamos reflujo para que la animación funcione correctamente
-                        lineElement.offsetHeight; 
-        
-                        lineElement.style.opacity = 1;
-                    }, delay);
-                }
-        
-                function displayLines(lines, callback) {
-                    lines.forEach((line, index) => {
-                        addLine(line, index * 1000);
-                    });
-                    setTimeout(callback, lines.length * 1000); // Llama al callback después de que todas las líneas se hayan mostrado
-                }
-        
-                function repeat() {
-                    container.innerHTML = ''; // Limpia el contenedor
-                    displayLines(lines, repeat); // Vuelve a llamar a displayLines después de que termine
-                }
-        
-                repeat(); // Inicia el ciclo de repetición
-            </script>
+            </div>    
         </div>
     </section>
+    <section class="hidden2">
+        <div class="whastapp-icon"><a href="https://wa.me/690953883"><img src="assets/img/whatsapp (1).svg" alt="whatsapp" width="50" height="50"></a></div>
+        </section>
     <section class="hidden">
-        <div class="about_container-hero">
-            <div class="about_container-hero-body">
-                <div class="about_container-hero-title">
-                    <p><strong style="color: #354552; font-weight: 600;">Multiaxis Consulting</strong> con más de 15 años de experiencia en la optimización de soluciones CAD/CAM. Nos comprometemos a ofrecer un servicio excepcional a nuestros clientes, brindando soporte y soluciones personalizadas que se adapten a sus necesidades específicas.</p>
-                </div>
+        <div class="home-container-hero">
+            <div class="home-container-hero-title"><h3>Más que <span style="color: #DD3224;">Herramientas</span></h3></div>
+            <div class="home-container-hero-subtitle">
+                <h3 style="color: #2b2b2b; width: 30%; margin-right: 2em;">Asesoramiento sobre herramientas y su uso.</h3>
+                <h3 style="color: #2b2b2b; width: 30%;">Diseño CAD y Programación CAM.</h3>
             </div>
         </div>
     </section>
     <section class="hidden">
+        <div class="home-container-hero">
+            <div class="home-container-hero-title"><h2>Servicios.</h2></div>
+            <div class="home-container-hero-subtitle">
+                <h2 style="color: #DD3224;"></h2>
+                <h2 style="color: #DD3224;"></h2>
+            </div>
+        </div>
         <div class="container-big">
             <div class="container-big-body">
-                <div class="container-big-title"><p>Desarrollo<br> de Postprocesadores.</p></div>
-                <div class="container-big-subtitle"><h2>Nos especializamos en el desarrollo de postprocesadores personalizados para máquinas CNC, específicamente para los entornos NX Siemens y CATIA.</h2></div>
+                <div class="container-big-title"><p></p></div>
+                <div class="container-big-subtitle"><h2></h2></div>
+            </div>
+        </div>
+        <div class="services-grid">
+            <div class="service-grid-column-one">
+                <div class="service-grid-column-img"></div>
+            </div>
+            <div class="service-grid-column-two">
+                <div class="service-grid-column-img"></div>
+            </div>
+            <div class="service-grid-column-three">
+                <div class="service-grid-column-img"></div>
             </div>
         </div>
     </section>
     <section class="hidden">
+        <div class="home-container-hero">
+            <div class="home-container-hero-title"><h2>Producto.</h2></div>
+            <div class="home-container-hero-subtitle">
+                <h2 style="color: #DD3224;"></h2>
+                <h2 style="color: #DD3224;"></h2>
+            </div>
+        </div>
         <div class="services-grid">
             <div class="service-grid-column-one">
-                <div class="service-grid-column-icon"><div class="service-icon"><img src="assets/img/service_vector_3.svg" alt="" width="80" height="80"></div></div>
-                <div><p><strong>Simulación.</strong></p>
-                    <p>Ofrecemos soluciones avanzadas de simulación que permiten a nuestros clientes visualizar y optimizar sus procesos de mecanizado antes de la producción real.</p>
+                <div class="service-grid-column-img"></div>
+                <div><h3 style="font-size: 32px; margin-bottom: 1em;">Madera.</h3>
+                <h4 style="color: #A7A5A5;">Pioneros en la fabricación de todo tipo de herramientas relacionadas al sector de la madera.</h4>
                 </div>
             </div>
             <div class="service-grid-column-two">
-                <div class="service-grid-column-icon"><div class="service-icon"><img src="assets/img/service_vector_1.svg" alt="" width="80" height="80"></div></div>
-                <div><p><strong>Aplicaciones Especializadas.</strong></p>
-                    <p>Además de los postprocesadores, desarrollamos aplicaciones y macros personalizadas que automatizan procesos críticos de modelado, programación y generación de documentación.</p>
+                <div class="service-grid-column-img"></div>
+                <div><h3 style="font-size: 32px; margin-bottom: 1em;">Metal.</h3>
+                <h4 style="color: #A7A5A5;">Herramientas ágiles, de gran precisión y a medida de las necesidades del cliente.</h4>
                 </div>
             </div>
             <div class="service-grid-column-three">
-                <div class="service-grid-column-icon"><div class="service-icon"><img src="assets/img/service_vector_2.svg" alt="" width="80" height="80"></div></div>
-                <div><p><strong>Documentación Técnica.</strong></p>
-                    <p>Nuestra capacidad para generar documentación técnica detallada es fundamental para mantener un flujo de trabajo organizado y eficiente.</p>
+                <div class="service-grid-column-img"></div>
+                <div><h3 style="font-size: 32px; margin-bottom: 1em;">Aplicaciones Especiales.</h3>
+                <h4 style="color: #A7A5A5;">Proyectos llave en mano. Programación, prototipado y herramientas.</h4>
                 </div>
             </div>
         </div>
     </section>
     <section class="hidden">
-        <div class="section-header">
-            <div class="section-header-title"><h3>Servicios</h3></div>
-            <div class="section-header-body">
-                <div class="section-header-body-text"><p>En Multiaxis Consulting, ofrecemos soluciones integrales en CAD/CAM, que incluyen postprocesadores personalizados para NX Siemens y CATIA, simulaciones avanzadas, documentación técnica, soporte técnico especializado y programas de formación, todo diseñado para maximizar la eficiencia y precisión de tu producción.</p></div>
-                <a href="servicios.html"><div class="section-header-body-button"><div class="button">Ver todo</div></a>
+        <div class="home-container-hero">
+            <div class="home-container-hero-title"><h2>Compañia.</h2></div>
+            <div class="home-container-hero-subtitle">
+                <h2 style="color: #DD3224;"></h2>
+                <h2 style="color: #DD3224;"></h2>
+            </div>
+        </div>
+        <div class="container-big">
+            <div class="container-big-body">
+                <div class="container-big-title"><p></p></div>
+                <div class="container-big-subtitle"><h2></h2></div>
             </div>
         </div>
     </section>
     <section class="hidden">
-        <div class="product-grid">
-            <div class="product-grid-column-one">
-                <div class="product-grid-title"><h2>Soporte Técnico Especializado</h2></div>
-                <div class="product-grid-subtitle"><h4>Entendemos que el soporte técnico es crucial para el éxito de cualquier implementación tecnológica. Nuestro Panel de Soporte Técnico, permite una comunicación rápida y eficiente con nuestros clientes. Respondemos de manera oportuna a cualquier consulta o problema que pueda surgir, asegurando que su producción no se detenga.</h4></div>
-            </div>
-            <div class="product-grid-column-two">
-                <div class="product-grid-title"><h2>Formación y Capacitación</h2></div>
-                <div class="product-grid-subtitle"><h4>Ofrecemos programas de formación y capacitación para asegurarnos de que nuestros clientes saquen el máximo provecho de nuestras soluciones. Nuestros cursos están diseñados para todos los niveles de experiencia y cubren todos los aspectos de NX CAM y la implementación de postprocesadores, desde conceptos básicos hasta técnicas avanzadas.</h4></div>
+        <div class="home-container-hero">
+            <div class="home-container-hero-title"><h2>Noticias.</h2></div>
+            <div class="home-container-hero-subtitle">
+                <h2 style="color: #DD3224;"></h2>
+                <h2 style="color: #DD3224;"></h2>
             </div>
         </div>
-    </section>
-    <section class="hidden">
-        <div class="section-header">
-            <div class="section-header-title"><h3>Noticias</h3></div>
-            <div class="section-header-body">
-                <div class="section-header-body-text"><p>Manténgase al día con las últimas noticias, innovaciones y logros de Multiaxis Consulting. Aquí encontrará las actualizaciones más recientes sobre nuestros proyectos, desarrollos tecnológicos y eventos de la industria.</p></div>
-                <a href="noticias.html"><div class="section-header-body-button"><div class="button">Ver todo</div></a>
-            </div>
-            
-        </div>
-    </section>
-    <section class="hidden">
         <div class="news-grid">
             <div class="news-grid-column-one">
                 <div class="new-body">
-                    <div class="new-title"><p style="font-weight: 500;">Multiaxis Consulting Estrena Nueva Imagen y Sitio Web</p></div>
-                    <div class="new-text"><p>Nos complace anunciar el lanzamiento de nuestra nueva imagen corporativa y sitio web renovado. Hemos optimizado la navegación para que encuentres fácilmente todo lo que necesitas saber sobre cómo Multiaxis Consulting puede ayudarte a llevar tu producción al siguiente nivel. ¡Explora nuestra nueva web y descubre todo lo que tenemos para ofrecer!</p></div>
+                    <div class="new-img4"></div>
+                    <div class="new-number"><div class="number"><h4 style="font-weight: 600;">01</h4></div></div>
+                    <div class="new-title"><h4 style="font-weight: 600;">Noticia ejemplo.</h4></div>
+                    <div class="new-text"><p>Texto ejemplo noticia.</p></div>
                 </div>
-                <div class="new-number"><div class="number"><p>1</p></div></div>
-                <div class="new-img4"></div>
             </div>
             <div class="news-grid-column-two">
                 <div class="new-body">
-                    <div class="new-title"><p style="font-weight: 500;">¡Síguenos en LinkedIn para Mantenerte Informado!</p></div>
-                    <div class="new-text"><p>En Multiaxis Consulting, queremos mantenerte al día con las últimas noticias y proyectos. Por eso, te invitamos a seguirnos en LinkedIn. Conéctate con nosotros para ser parte de nuestra comunidad, conocer las últimas innovaciones y descubrir cómo nuestras soluciones pueden transformar tu negocio. ¡Síguenos en <a href="https://www.linkedin.com/company/multiaxis-consulting-sl/?originalSubdomain=es">LinkedIn</a> y no te pierdas nada!</p></div>
+                    <div class="new-img4"></div>
+                    <div class="new-number"><div class="number"><h4 style="font-weight: 600;">02</h4></div></div>
+                    <div class="new-title"><h4 style="font-weight: 600;">Noticia ejemplo.</h4></div>
+                    <div class="new-text"><p>Texto ejemplo noticia.</p></div>
                 </div>
-                <div class="new-number"><div class="number"><p>2</p></div></div>
-                <div class="new-img2"></div>
             </div>
             <div class="news-grid-column-three">
+                <div class="new-body">
+                    <div class="new-img4"></div>
+                    <div class="new-number"><div class="number"><h4 style="font-weight: 600;">03</h4></div></div>
+                    <div class="new-title"><h4 style="font-weight: 600;">Noticia ejemplo.</h4></div>
+                    <div class="new-text"><p>Texto ejemplo noticia.</p></div>
+                </div>
             </div>
             <div class="news-grid-column-four">
+                <div class="new-body">
+                    <div class="new-img4"></div>
+                    <div class="new-number"><div class="number"><h4 style="font-weight: 600;">04</h4></div></div>
+                    <div class="new-title"><h4 style="font-weight: 600;">Noticia ejemplo.</h4></div>
+                    <div class="new-text"><p>Texto ejemplo noticia.</p></div>
+                </div>
             </div>
         </div>
     </section>
     <section class="hidden">
+        <div class="home-container-hero">
+            <div class="home-container-hero-title"><h2>Contacte con</h2></div>
+            <div class="home-container-hero-subtitle">
+                <h2 style="color: #DD3224;"></h2>
+                <h2 style="color: #DD3224;"></h2>
+            </div>
+        </div>
         <div class="contact-container">
             <div class="contact-container-body">
-                <div class="contact-container-title"><h1>Contacto</h1></div>
-                <div class="contact-container-subtitle"><p>Si tiene alguna pregunta, o desea más información sobre nuestros servicios, no dude en ponerse en contacto con nosotros.</p></div>
-                <div class="contact-adress"><p>Poligono Industrial Anardi 3-01<br>20730 Azpeitia<br>Gipuzkoa</p></div>
-                <div class="contact-email"><p>+34 670 24 95 92</p><br><a href=""><p>info@multiaxisconsulting.es</p></a></div>
-                <div class="contact-button-container">
-                    <a href="https://www.linkedin.com/company/multiaxis-consulting-sl/?originalSubdomain=es"><div class="contact-linkedin-button">Linkedin</div></a>
-                    <a href="https://www.youtube.com/"><div class="contact-linkedin-button">Youtube</div></a>
+                <div class="contact-container-title"><h2>¿Quiere saber más sobre los productos <br> y servicios de Dtools?</h2></div>
+            </div>
+            <div class="contact-container-body2">
+                <div class="contact-container-title"><form action="/my-handling-form-page" method="post">
+                    <ul>
+                      <li>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="user_name" value="Nombre*"/>
+                      </li>
+                      <li>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="user_name" value="Apellido*"/>
+                      </li>
+                      <li>
+                        <label for="mail"></label>
+                        <input type="email" id="mail" name="user_mail" value="Correo electrónico*"/>
+                      </li>
+                      <li>
+                        <label for="mail"></label>
+                        <input type="email" id="mail" name="user_mail" value="Compañía*"/>
+                      </li>
+                      <li>
+                        <label for="msg"></label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </li>
+                      <li class="form-button">
+                        <button type="submit">Enviar</button>
+                      </li>
+                    </ul>
+                  </form>
                 </div>
             </div>
         </div>
@@ -265,7 +255,6 @@
     <footer>
             <div class="footer-container">
                 <div class="footer-container-body">
-                    <div class="footer-menu-title"><p style="color: #a3a19f; font-weight: 500;">Menu</p></div>
                     <ul>
                         <li><a href="empresa.html">Empresa</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
@@ -273,12 +262,26 @@
                         <li><a href="noticias.html">Noticias</a></li>
                     </ul>
                 </div>
+                <div class="footer-container-body">
+                    <ul>
+                        <li><a href="">Linkedin</a></li>
+                        <li><a href="">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-container-body">
+                    <ul>
+                        <li style="margin-bottom: 2em;"><h4>Anardi Area, 3-B2<br>Azpeitia 20730<br>Gipuzkoa</h4></li>
+                        <li><h4>+34 943 813 145</h4></li>
+                        <li style="margin-bottom: 2em;"><a href="">info@diatectools.es</a></li>
+                        <li><a style="color: #DD3224;" href="">Ver en Google Maps</a></li>
+                    </ul>
+                </div>
             </div>
         <div class="footer-container2">
             <div class="footer_logo">
-                <a id="nav-element" href="index.html"><div class="logo-img"><img src="assets/img/footer_logo.svg" alt="logo" width="85%" height="85%"></div></a>
+                <a id="nav-element" href="index.html"><div class="logo-img"><img src="assets/img/Imagotipo_Dtools_Negativo_Sinfondo.svg" alt="logo" width="100px"></div></a>
             </div>
-            <div class="footer-copy"><p style="color: #354552; font-weight: 500;">Multiaxis Consulting© Copyright 2024</p></div>
+            <div class="footer-copy"><p style="color: #ffffff; font-weight: 500;">Dtools© Copyright 2024</p></div>
         </div>
     </footer>
 </body>
