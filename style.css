@@ -967,6 +967,61 @@ textarea {
     transform: translateX(-50%);
     top: 50%;
 }
+/** COMPANY PAGE */
+.container-company {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    height: 74vh;
+    background: #f5f4f2;
+    background-image: url('assets/img/company.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0em 2em 2em 2em;
+}
+.container-big-company-page {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    height: 42vh;
+    background: #2b2b2b;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0em 2em 2em 2em;
+}
+.container-big-img-company-page {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+}
+.company-text-container {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 0em 2em 6em 2em;
+}
+.company-text-container-subtitle {
+    width: 50%;
+    text-align: justify;
+    color: #a7a5a5;
+}
+.company-text-container-subtitle2 {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    color: #a7a5a5;
+    margin: 0em 0em 10em 0em;
+}
+.company-text-container-subtitle2 div {
+    margin-right: 2em;
+    width: 30%;
+}
+.company-text-container h3 {
+    margin: 0;
+}
 /** FOOTER */
 footer {
     margin-top: 1em;
