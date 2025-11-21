@@ -33,7 +33,7 @@
                         <ul>
                             <li><a href="product.html">Productos</a></li>
                             <li><a href="servicios.html">Servicios</a></li>
-                            <li><a href="company.html">Empresa</a></li>
+                            <li><a href="#">Empresa</a></li>
                         </ul>
                     </div>
                 </nav>  
@@ -44,7 +44,7 @@
         <div id="overlaymenu">
             <div class="overlymenu_line"></div>
                 <ul>
-                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="company.html">Empresa</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="trabajos.html">Productos</a></li>
                     <li><a href="noticias.html">Noticias</a></li>
@@ -70,102 +70,133 @@
                 </div>
         </div>
     </header>
-    <section class="hidden">
-        <div class="home-container-hero">
-            <div class="home-container-hero-title"><h2></h2></div>
-            <div class="home-container-hero-subtitle">
-                <h2 style="color: #DD3224;"></h2>
-                <h2 style="color: #DD3224;"></h2>
-            </div>
-        </div>
-        <div class="container-services">
-            <div class="container-big-body">
-                <div class="container-big-subtitle"><h1 style="color: #ffffff;">¿Cómo hacemos realidad los
-                    proyectos en <span style="color: #DD3224;">Dtools?</span></h1></div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="company-text-container">
-            <div class="company-text-container-title"><h3>Servicos <span style="color: #DD3224;">Dtools</span></h3></div>
-            <div class="company-text-container-subtitle"><p>Desde sus inicios, Dtools ha buscado ofrecer la excelencia en sus herramientas de precisión y procesos para el sector de la madera y sus derivados. Diatec se centra en ofrecer soluciones mediante el asesoramiento y la distribución de herramientas estándares o a medida de las necesidades del cliente.<br><br>
-    
-                En Dtools nos centramos tanto en la calidad, sostenibilidad y confiabilidad de nuestros productos como en el bienestar de nuestro equipo.<br><br>
-                
-                Creemos que la cultura empresarial, los valores y alta cualificación de nuestro equipo promueven la obtención de un producto de calidad, ayudándonos a alcanzar nuestro objetivo principal, la satisfacción del cliente.</p></div>
-        </div>
-    </section>
-    <section class="hidden2">
-        <div class="whastapp-icon"><a href="https://wa.me/690953883"><img src="assets/img/whatsapp (1).svg" alt="whatsapp" width="30" height="30"></a></div>
-    </section>
-    <section class="hidden">
-        <div class="container-big-service">
-            <div class="container-big-body">
-                <div class="container-big-title"><p></p></div>
-                <div class="container-big-img-service"><img src="assets/img/service_line2.svg" alt="services" width="1000"></div>
-            </div>
-        </div>
-        <div class="services-grid">
-            <div class="service-grid-column-one">
-                <div class="service-grid-column-img-one">
-                    <div class="service-grid-column-img-title"><h3 style="color: #ffffff;">Diseño a medida.</h3></div>
+    <section id="hero" class="hidden">
+        <a href="servicios.html">
+            <div class="product-main-page-container">
+                <div class="product-main-page-container-title">
+                    <div><h1 style="color: #2b2b2b;">Soluciones integrales en diseño y fabricación de herramientas de corte.</h1></div>
+                    <div><h4 style="color: #86868b;">En Dtools ofrecemos un servicio completo que abarca todas las fases del proceso de fabricación.</h4></div>
+                    <div class="main-page-container-button">
+                        <a href="servicios.html"><button class="main-page-button-color">Ver Proceso</button></a>
+                  </div>
                 </div>
             </div>
-            <div class="service-grid-column-two">
-                <div class="service-grid-column-img-two">
-                    <div class="service-grid-column-img-title"><h3 style="color: #ffffff;">Servicio de afilado y mantenimiento.</h3></div>
-                </div>
-            </div>
-            <div class="service-grid-column-three">
-                <div class="service-grid-column-img-three">
-                    <div class="service-grid-column-img-title"><h3 style="color: #ffffff;">Asesoramiento sobre herramientas y su uso</h3></div>
-                </div>
-            </div>
-        </div>
+        </a>
     </section>
+<!-- Swiper JS (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <section class="hidden">
-        <div class="home-container-hero">
-            <div class="home-container-hero-title"><h2>Producto.</h2></div>
-            <div class="home-container-hero-subtitle">
-                <h2 style="color: #DD3224;"></h2>
-                <h2 style="color: #DD3224;"></h2>
-            </div>
-        </div>
-        <div class="services-grid">
-            <a href="product.html">
-                <div class="service-grid-column-one">
-                    <div class="product-grid-column-img-one"></div>
-                    <div>
-                        <h3 style="margin-bottom: 1em;">Herramientas de corte para madera.</h3>
-                        <p style="color: #A7A5A5;">Pioneros en la fabricación de todo tipo de herramientas relacionadas al sector de la madera.</p>
+    <!-- Swiper CSS (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <section class="carousel">
+            <div class="carousel-title"><h1 p style="color: #ffffff;">Así creamos tus herramientas</h1></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <a href="#producto-1" class="slide-card">
+                    <div class="slide-info">
+                        <div><h2>Contacto con el Cliente</h2></div>
+                        <div><h4>Escuchamos tus necesidades y analizamos tu proceso de producción para definir exactamente qué tipo de herramienta necesitas. Nuestro equipo técnico te asesora desde el primer momento, ofreciendo soluciones adaptadas a tu máquina, material y objetivo productivo.</h4></div>
                     </div>
+                    <img src="" alt="Producto 1" class="slide-img" loading="lazy">
+                    </a>
                 </div>
-            </a>
-            <a href="product2.html">
-                <div class="service-grid-column-two">
-                    <div class="product-grid-column-img-two"></div>
-                    <div>
-                        <h3 style="margin-bottom: 1em;">Herramientas de corte para metal.</h3>
-                        <p style="color: #A7A5A5;">Herramientas ágiles, de gran precisión y a medida de las necesidades del cliente.</p>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <a href="#producto-2" class="slide-card">
+                    <div class="slide-info">
+                        <div><h2>Análisis del Proyecto</h2></div>
+                        <div><h4>Estudiamos a fondo cada detalle: geometrías, velocidades de corte, tipo de material, máquina CNC, tolerancias y exigencias de acabado.
+                            Este análisis técnico nos permite diseñar herramientas optimizadas para mejorar rendimiento y reducir tiempos de mecanizado.</h4></div>
                     </div>
+                    <img src="" alt="Producto 2" class="slide-img" loading="lazy">
+                    </a>
                 </div>
-            </a>
-            <div class="service-grid-column-three">
-                <div class="product-grid-column-img-three"></div>
-                <div><h3 style="margin-bottom: 1em;">Aplicaciones Especiales.</h3>
-                <p style="color: #A7A5A5;">Proyectos llave en mano. Programación, prototipado y herramientas.</p>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <a href="#producto-3" class="slide-card">
+                    <div class="slide-info">
+                        <div><h2>Validación de Diseños</h2></div>
+                        <div><h4>Creamos el diseño de la herramienta mediante modelado 3D de alta precisión y simulación digital.
+                            Antes de fabricar, validamos contigo el diseño final para asegurarnos de que cumple exactamente las necesidades del proyecto.</h4></div>
+                    </div>
+                    <img src="" alt="Producto 3" class="slide-img" loading="lazy">
+                    </a>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <a href="#producto-3" class="slide-card">
+                    <div class="slide-info">
+                        <div><h2>Desarrollo de Prototipos</h2></div>
+                        <div><h4>Fabricamos prototipos en nuestras instalaciones utilizando maquinaria de última generación.
+                        Aquí realizamos ajustes finos en geometrías, tolerancias y comportamientos reales, garantizando que la herramienta funcione como debería.</h4></div>
+                    </div>
+                    <img src="" alt="Producto 3" class="slide-img" loading="lazy">
+                    </a>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <a href="#producto-3" class="slide-card">
+                    <div class="slide-info">
+                        <div><h2>Fabricación y Certificación</h2></div>
+                        <div><h4>La herramienta final se produce íntegramente en Dtools.
+                        Controlamos cada paso: afilado profesional, recubrimientos, inspección dimensional y verificación final bajo estándares de calidad industrial.
+                        Entregamos herramientas listas para trabajar desde el primer minuto, acompañadas de certificaciones de calidad si el cliente lo solicita.</h4></div>
+                    </div>
+                    <img src="" alt="Producto 3" class="slide-img" loading="lazy">
+                    </a>
                 </div>
             </div>
+
+            <!-- Controles -->
+            <div class="swiper-controls">
+            <div class="swiper-button-prev" aria-label="Slide anterior"></div>
+            <div class="swiper-button-next" aria-label="Slide siguiente"></div>
+            </div>
         </div>
+        </section>
+    </section>
+
+    <section class="hidden">
+        <a href="servicios.html">
+            <div class="main-page-container-two">
+                <div class="main-page-container-title">
+                    <h1 style="color: #ffffff;">¿Por qué elegir Dtools?</h1>
+                    <h4 style="color: #86868b;">Acompañamos a nuestros clientes en todo el proceso de fabricación de herramienta, desde la idea inicial hasta la certificación final.</h4>
+                  <div class="main-page-container-button">
+                        <a href="servicios.html"><button class="main-page-button-color">Ver Catalogo</button></a>
+                  </div>
+                  <img src="assets/img/tool_04.png" alt="hero image" class="main-page-container-bg" loading="lazy" width="520">
+                  <div class="main-page-container-subtitle">
+                    <h4><span style="color: #DD3224;">Fabricación a medida y flexibilidad:</span><br>cada herramienta se desarrolla según tus parámetros operativos, plan de producción y máquina.</h4>
+                    <h4><span style="color: #DD3224;">Alta tecnología y calidad:</span><br>utilizamos los mejores materiales, controles dimensionales y recubrimientos para garantizar durabilidad y fidelidad de corte.</h4>
+                    <h4><span style="color: #DD3224;">Entrega rápida y fiable:</span><br>contamos con stock estratégico y procesos optimizados para ofrecer plazos express cuando el tiempo es crítico.</h4>
+                    <h4><span style="color: #DD3224;">Asesoramiento técnico experto:</span><br>nuestro equipo acompaña el proceso, desde la elección de la herramienta hasta su optimización en tu centro de mecanizado.</h4>
+                    <h4><span style="color: #DD3224;">Experiencia contrastada en varios sectores:</span><br>madera, metal y aplicaciones especiales, lo que nos permite entender distintos retos y aportar soluciones adaptadas.</h4>
+                  </div>
+                </div>
+            </div>
+        </a>
     </section>
     <section class="hidden">
-        <div class="home-container-hero">
-            <div class="home-container-hero-title"><h2>Contacte con</h2></div>
-            <div class="home-container-hero-subtitle">
-                <h2 style="color: #DD3224;"></h2>
-                <h2 style="color: #DD3224;"></h2>
+        <a href="servicios.html">
+            <div class="main-page-container-six">
+                <div class="main-page-container-title">
+                    <h1 style="color: #ffffff;">Si buscas una solución que realmente mejore tu producción,</h1>
+                    <h4 style="color: #86868b;">Contacta con nosotros y te asesoramos sin compromiso.</h4>
+                  <div class="main-page-container-button">
+                        <a href="servicios.html"><button class="main-page-button-color">Solicitar asesoramiento</button></a>
+                  </div>
+                </div>
             </div>
-        </div>
+        </a>
+    </section>
+    <section class="hidden">
         <div class="contact-container">
             <div class="contact-container-body">
                 <div class="contact-container-title"><h2 style="color: #ffffff;">¿Quiere saber más sobre los productos <br> y servicios de Dtools?</h2></div>
@@ -200,11 +231,6 @@
                   </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="hidden">
-        <div class="container-big-map">
-            <div class="container-big-map-img"><img src="assets/img/map.svg" alt="services" width="1080"></div>
         </div>
     </section>
     <footer>
